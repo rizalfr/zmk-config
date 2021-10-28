@@ -29,14 +29,14 @@
 
                 lower_layer {
 // ----------------------------------------------------------------------------------
-// |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
-// |    |  1  |  2  |  3  |  4  | 5   |   | '   |   - |  =  | [   |  ]  |     ~     |
-// |    | 6   | 7   | 8   | 9.  |  0  |   | :   |   _ |  +  | {   | }   | SHFT(RET) |
+// | `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |    DEL    |
+// |    |  1  |  2  |  3  |  4  | 5   |   | '   |   - |  =  | [   |  ]  |    \      |
+// |    | 6   | 7   | 8   | 9.  |  0  |   | :   |   _ |  +  | {   | }   |    ~     |
 //                       |     |     | RET | ADJ |     |
                         bindings = <
-   &trans &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR    &kp LPAR  &kp RPAR  &kp DEL
-   &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5               &kp SQT  &kp MINUS &kp EQUAL    &kp LBKT &kp RBKT &kp GRAVE
-   &trans &kp N6   &kp N7    &kp N8 &kp N9 &kp N0          &kp COLON  &kp UNDER  &kp PLUS &kp LBRC &kp RBRC &mt RSHFT RET
+   &kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR    &kp LPAR  &kp RPAR  &kp DEL
+   &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5               &kp SQT  &kp MINUS &kp EQUAL    &kp LBKT &kp RBKT &kp BACKSLASH
+   &trans &kp N6   &kp N7    &kp N8 &kp N9 &kp N0          &kp COLON  &kp UNDER  &kp PLUS &kp LBRC &kp RBRC &kp TILDE2
                                  &trans      &trans         &kp RET        &mo 3       &trans
                         >;
                 };
